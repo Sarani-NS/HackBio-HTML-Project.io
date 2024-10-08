@@ -12,18 +12,31 @@ Identify key parts of the project to showcase, such as:
 
 ## Plan Website Structure
 
-Homepage: Brief overview of my hackbio internship.
-
-R/Bash Scripts Page: Dynamic loading of script descriptions, including output.
-
-Results Page: Data visualizations or analysis results generated from the R scripts.
-
-Console Logs: Display console outputs in a formatted, readable manner.
-
+- Home Page: Overview of the internship, goals, and main focus.
+- Projects: Descriptions of each project, including R code and console outputs.
+- Code Repository: A section that links to or embeds the R code from GitHub.
+- Documentation/Blog: Any notes or documentation related to the hackbio internship. Anecdotes eventually.
+- About/Contact: Information about me, my teammates, and contact details.
+  
 ## Frontend Development (HTML/CSS/JS)
 
-HTML: Use HTML to create page layouts.
-CSS: Style the website for clarity and presentation.
+*HTML*: Use HTML to create page layouts.
+
+Home Page Layout: start with a basic homepage that introduces the hackbio internship, with links to other sections.
+
+*CSS*: Style the website for clarity and presentation.
+
+- Create a consistent design by defining a color scheme, fonts, and layout rules in a style.css file. Make sure it’s responsive (works on different devices) by using a framework like Bootstrap or writing my own media queries.
+- Header: Title and navigation links to other sections.
+- Main Content: Highlight important internship details.
+- Footer: Links to your GitHub repository and other relevant pages.
+
+Color palette: sage green, white, black.
+
+Look up free templates. https://github.com/learning-zone/website-templates?tab=readme-ov-file
+
+153	startbootstrap-clean-blog
+
 JavaScript: Enable interactivity (e.g., dynamically load R script outputs or toggle visibility of content).
 
 ## Dynamic Content (JavaScript or Django)
@@ -58,6 +71,10 @@ Note: I used ChatGPT in order to guide me into a direction.
 # Sources
 
 ## HackBio repository
+
+## Free templates
+
+https://github.com/learning-zone/website-templates?tab=readme-ov-file
 
 ## Courses and tutorials taken
 
