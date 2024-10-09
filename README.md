@@ -1,5 +1,7 @@
 # HackBio HTML Project
 
+![HackBio Logo](https://github.com/user-attachments/assets/cb259655-a975-4f1c-ac88-73bd69ba4146)
+
 Turning my online-internship experience into a dynamic HTML pages-association. 
 Screenshot of the main page.
 
