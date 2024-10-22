@@ -9,7 +9,7 @@
     <meta name="description" content="AMR, drug resistance, article review, cancer">
     <meta name="author" content="Sarani NATIVEL-SANTERNE">
 
-    <title>HackBio Post - stage 0</title>
+    <title>HackBio Post - stage 4</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -72,14 +72,14 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('https://raw.githubusercontent.com/Sarani-NS/HackBio-HTML-Project.io/main/img/drugs.jpg')">
+    <header class="intro-header" style="background-image: url('https://raw.githubusercontent.com/Sarani-NS/HackBio-HTML-Project.io/main/img/stage4.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="page-heading">
-                        <h1>Drug Resistance in Cancer Treatment</h1>
+                        <h1>Simple NGS Analysis Pipeline</h1>
                         <hr class="small">
-                        <span class="subheading">Why is drug resistance a problem?</span>
+                        <span class="subheading">Processing NGS data has never been that easy.</span>
                     </div>
                 </div>
             </div>
@@ -87,35 +87,99 @@
     </header>
 
 <!-- Post Content -->
-    <article>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <p>Nowadays, several treatment options can be proposed to a patient diagnosed with cancer. These treatments can, in some cases, eradicate tumors in patients whose cancer has already metastasized. However, for many, treatments stop working. This is known as drug resistance, where cancer cells end up resisting the effects of drugs used for treatment.</p>
-                    
-                        <p>Cancer cells can be resistant before the treatment even starts, making them insensitive to a specific drug. This intrinsic resistance is often due to the presence of specific genetic mutations. We can quote the example of mutations in the TP53 gene, which has a role in apoptosis. This can cause cancer cells to survive the cell death that chemotherapy is supposed to induce, causing the treatment to fail. In such case, these resisting cells can proliferate and thus reform tumors.</p>
-                    
-                        <p>Acquired resistance, on the other hand, develops over time (within weeks or years after starting the treatment) as cancer cells adapt to the drug while it is being administered. However, there is a catch. Despite the progression of the disease under the ongoing therapy, the use of higher drug doses is limited by the toxicity of tissues, therefore limiting the amount of drug that actually reaches the tumor.</p>
-                    
-                        <blockquote>According to Bissan Al-Lazikani (Nature Biotechnology), "co-administer drugs that work by different molecular mechanisms [would be] thereby increasing tumor cell killing while reducing the likelihood of drug resistance and minimizing overlapping toxicity".</blockquote>
-                    
-                        <p>Another approach is to re-sensitize patients to the original treatment by treating them with a drug blocking the mechanism of resistance developed by these tumors, before shifting back to the drug to which they grew resistant.</p>
-                    
-                        <p>Some researchers decided to see cancer resistance as an “engineering problem” (Vasan and al., 2019), synthesizing different approaches for each tumor and use it in order to direct the choice of a suitable therapy for each specific case. Several points however need to be explored and understood, such as the tumors’ regulation mechanisms (epigenetic and metabolic-wise).</p>
-                    
-                        <p>In conclusion, drug resistance in cancer represents a burden in the effective management of the disease, causing the patient’s quality of life to diminish as the cancer grows more difficult to treat. Understanding the mechanisms causing drug resistance in cancerous cells is therefore needed in order to develop strategies to counteract it and offer an effective treatment to patients.</p>
-                    
-                        <footer>
-                            <h3>References</h3>
-                            <ul>
-                                <li>Holohan, C., Van Schaeybroeck, S., Longley, D. et al. Cancer drug resistance: an evolving paradigm. <i>Nat Rev Cancer</i> 13, 714–726 (2013). <a href="https://doi.org/10.1038/nrc3599">https://doi.org/10.1038/nrc3599</a></li>
-                                <li>Vasan, N., Baselga, J. & Hyman, D.M. A view on drug resistance in cancer. <i>Nature</i> 575, 299–309 (2019). <a href="https://doi.org/10.1038/s41586-019-1730-1">https://doi.org/10.1038/s41586-019-1730-1</a></li>
-                            </ul>
-                        </footer>
-                </div>
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1>Simple NGS Analysis Pipeline</h1>
+                <p>This pipeline is designed to process Next-Generation Sequencing (NGS) data, perform quality control, trim the reads, align them to a reference genome, and call variants using common bioinformatics tools.</p>
+                <img src="https://github.com/user-attachments/assets/c515bed3-0fa7-4e90-81ca-3096a05a0557" alt="NGS Analysis Pipeline" />
+
+                <hr/>
+
+                <h2>Pipeline Overview</h2>
+                <ul>
+                    <li><strong>Data Download (wget)</strong>: Downloads the paired-end reads & the reference genome files in the precised directory.</li>
+                    <li><strong>Quality Control (FastQC)</strong>: Assess the quality of raw reads.</li>
+                    <li><strong>Trimming (FastP)</strong>: Trim low-quality bases and adapters from the reads.</li>
+                    <li><strong>Genome Mapping (BWA)</strong>: Align the trimmed reads to the reference genome.</li>
+                    <li><strong>Variant Calling (FreeBayes)</strong>: Identify variants (SNPs and indels) from the aligned reads.</li>
+                </ul>
+
+                <h3>Requirements</h3>
+                <p>For this pipeline, you will need the following tools:</p>
+                <ul>
+                    <li>fastqc</li>
+                    <li>fastp</li>
+                    <li>bwa</li>
+                    <li>samtools</li>
+                    <li>bcftools</li>
+                    <li>freebayes</li>
+                </ul>
+                <p>Install them with <code>setup.sh</code>:</p>
+                <pre><code>bash setup.sh</code></pre>
+
+                <h3>Running the Pipeline</h3>
+                <p>The pipeline can be executed by running the <code>script.sh</code> file. The script downloads the data then processes them before performing the full NGS analysis.</p>
+                <pre><code>bash script.sh</code></pre>
+
+                <p>After running the pipeline, you will get the following files of interest:</p>
+                <ul>
+                    <li><strong>The downloaded data</strong></li>
+                    <ul>
+                        <li><strong>Forward reads</strong>: ERR8774458_1.fastq.gz</li>
+                        <li><strong>Reverse reads</strong>: ERR8774458_2.fastq.gz</li>
+                        <li><strong>Reference genome</strong>: Reference.fasta</li>
+                    </ul>
+                    <li><strong>The output</strong></li>
+                    <ul>
+                        <li><strong>out_R1.fq.gz, out_R2.fq.gz</strong>: Trimmed paired-end reads</li>
+                        <li><strong>out.bam</strong>: Aligned reads in BAM format</li>
+                        <li><strong>var.vcf</strong>: Variant call format (VCF) file with identified variants</li>
+                    </ul>
+                </ul>
+
+                <hr/>
+
+                <h2>More dataset to try the pipeline on</h2>
+                <h3>Reference</h3>
+                <a href="https://raw.githubusercontent.com/josoga2/yt-dataset/main/dataset/raw_reads/reference.fasta">https://raw.githubusercontent.com/josoga2/yt-dataset/main/dataset/raw_reads/reference.fasta</a>
+
+                <h3>ACBarrie</h3>
+                <ul>
+                    <li><a href="https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/ACBarrie_R1.fastq.gz">https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/ACBarrie_R1.fastq.gz</a></li>
+                    <li><a href="https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/ACBarrie_R2.fastq.gz">https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/ACBarrie_R2.fastq.gz</a></li>
+                </ul>
+
+                <h3>Alsen</h3>
+                <ul>
+                    <li><a href="https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/Alsen_R1.fastq.gz">https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/Alsen_R1.fastq.gz</a></li>
+                    <li><a href="https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/Alsen_R2.fastq.gz">https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/Alsen_R2.fastq.gz</a></li>
+                </ul>
+
+                <h3>Baxter</h3>
+                <ul>
+                    <li><a href="https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/Baxter_R1.fastq.gz">https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/Baxter_R1.fastq.gz</a></li>
+                    <li><a href="https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/Baxter_R2.fastq.gz">https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/Baxter_R2.fastq.gz</a></li>
+                </ul>
+
+                <h3>Chara</h3>
+                <ul>
+                    <li><a href="https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/Chara_R1.fastq.gz">https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/Chara_R1.fastq.gz</a></li>
+                    <li><a href="https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/Chara_R2.fastq.gz">https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/Chara_R2.fastq.gz</a></li>
+                </ul>
+
+                <h3>Drysdale</h3>
+                <ul>
+                    <li><a href="https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/Drysdale_R1.fastq.gz">https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/Drysdale_R1.fastq.gz</a></li>
+                    <li><a href="https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/Drysdale_R2.fastq.gz">https://github.com/josoga2/yt-dataset/raw/main/dataset/raw_reads/Drysdale_R2.fastq.gz</a></li>
+                </ul>
+
             </div>
         </div>
-    </article>
+    </div>
+</article>
+
 
     <hr>
 
