@@ -19,7 +19,7 @@ $message = $_POST['message'];
 $to = 'sarani.santerne.etu@univ-lille.fr'; 
 $email_subject = "HackBio internship project - Contact Form:  $name";
 $email_body = "Someone used the contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
-$headers = "From: noreply@yourdomain.com\n"; 
+$headers = "From: sarani.santerne.etu@univ-lille.fr\n"; 
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);
 return true;			
