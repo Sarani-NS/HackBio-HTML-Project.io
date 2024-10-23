@@ -17,6 +17,41 @@
     <!-- Custom CSS -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
 
+    <style>
+        .dynamic-image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .dynamic-image-container img {
+            width: 100%;
+            max-width: 600px;
+            transition: transform 0.3s ease-in-out;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .dynamic-image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .image-caption {
+            font-size: 0.9em;
+            color: #555;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .image-caption a {
+            color: #738678;
+            text-decoration: none;
+        }
+
+        .image-caption a:hover {
+            color: #738276;
+        }
+    </style>
+    
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -92,6 +127,15 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <p>Nowadays, several treatment options can be proposed to a patient diagnosed with cancer. These treatments can, in some cases, eradicate tumors in patients whose cancer has already metastasized. However, for many, treatments stop working. This is known as drug resistance, where cancer cells end up resisting the effects of drugs used for treatment.</p>
+
+                        <!-- Image Section -->
+                        <div class="dynamic-image-container">
+                            <img src="https://app.biorender.com/biorender-templates/figures/all/t-5f17551d2baea000aee86925-overcoming-drug-resistance-in-cancer" alt="Overcoming Drug Resistance in Cancer Image">
+                            <p class="image-caption">
+                                Cevatemre, B. (2020). Overcoming Drug Resistance in Cancer. 
+                                <a href="https://app.biorender.com/biorender-templates/figures/all/t-5f17551d2baea000aee86925-overcoming-drug-resistance-in-cancer" target="_blank">https://app.biorender.com/biorender-templates/figures/all/t-5f17551d2baea000aee86925-overcoming-drug-resistance-in-cancer</a>
+                            </p>
+                        </div>
                     
                         <p>Cancer cells can be resistant before the treatment even starts, making them insensitive to a specific drug. This intrinsic resistance is often due to the presence of specific genetic mutations. We can quote the example of mutations in the TP53 gene, which has a role in apoptosis. This can cause cancer cells to survive the cell death that chemotherapy is supposed to induce, causing the treatment to fail. In such case, these resisting cells can proliferate and thus reform tumors.</p>
                     
