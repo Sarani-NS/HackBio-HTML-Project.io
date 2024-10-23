@@ -12,7 +12,7 @@
 
 <h3 align="left">Some implemented functionalities</h3>
 
-<img src="https://raw.githubusercontent.com/Sarani-NS/HackBio-HTML-Project.io/c85e8be93a289be55422eb600ead6584610fedf7/img/functionalities.png" alt="overview"/>
+<img src="https://raw.githubusercontent.com/Sarani-NS/HackBio-HTML-Project.io/refs/heads/main/img/functionalities.png" alt="functionalities"/>
 
 <h3 align="left">Wait... is that ANOTHER form?</h3>
 
