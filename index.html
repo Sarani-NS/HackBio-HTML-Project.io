@@ -17,6 +17,44 @@
     <!-- Custom CSS -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
 
+        <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <style>
+        .dynamic-image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .dynamic-image-container img {
+            width: 100%;
+            max-width: 600px;
+            transition: transform 0.3s ease-in-out;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .dynamic-image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .image-caption {
+            font-size: 0.9em;
+            color: #555;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .image-caption a {
+            color: #738678;
+            text-decoration: none;
+        }
+
+        .image-caption a:hover {
+            color: #738276;
+        }
+    </style>
+
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -105,11 +143,12 @@
 
                 <h2>Tools and Software Used</h2>
 
-                <p>
+                                        <!-- Image Section -->
+                <div class="dynamic-image-container">                        
                     <img src="https://raw.githubusercontent.com/Sarani-NS/HackBio-HTML-Project.io/main/img/python-logo-only.svg" alt="Python" width="40" height="40"/>
                     <img src="https://raw.githubusercontent.com/Sarani-NS/HackBio-HTML-Project.io/main/img/R_logo.svg" alt="R" width="40" height="40"/>
                     <img src="https://raw.githubusercontent.com/Sarani-NS/HackBio-HTML-Project.io/main/img/bash-1.svg" alt="Bash" width="40" height="40"/>
-                </p>
+                </div>
                 
                 <hr>
 
