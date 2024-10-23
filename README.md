@@ -2,8 +2,7 @@
 
 <img src="https://github.com/user-attachments/assets/cb259655-a975-4f1c-ac88-73bd69ba4146" alt="hackbio logo" />
 
-<p>Turning my online-internship experience into a dynamic HTML pages-association. 
-Screenshot of the main page.</p>
+<p>Turning my online-internship experience into a portfolio website with dynamic features. </p>
 
 <h2 align="left">Website</h2>
 
