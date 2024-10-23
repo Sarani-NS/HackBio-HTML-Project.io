@@ -26,10 +26,12 @@
   <img src="https://github.com/yurijserrano/Github-Profile-Readme-Logos/blob/master/programming%20languages/javascript.svg" alt="JavaScript" width="40" height="40"/>
 
   <img src="https://github.com/yurijserrano/Github-Profile-Readme-Logos/blob/master/programming%20languages/python.svg" alt="Python" width="40" height="40"/>
-</p>
 
   <img src="https://github.com/user-attachments/assets/bdc6d7eb-50c5-4161-8040-8a5586ad4101" alt="R" width="40" height="40"/>
+  
+  <img src="https://github.com/yurijserrano/Github-Profile-Readme-Logos/blob/master/programming%20languages/bash.svg" alt="Bash" width="40" height="40"/>
 
+</p>
 ---
 
 <h2 align="left">Credits</h2>
