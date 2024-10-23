@@ -17,6 +17,49 @@
     <!-- Custom CSS -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
 
+       <style>
+        /* Effet de survol pour agrandir légèrement l'image */
+        .img-responsive {
+            width: 100%; /* Ajustez la largeur comme vous le souhaitez */
+            transition: transform 0.3s ease-in-out, opacity 0.5s ease;
+            cursor: pointer;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .img-responsive.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Conteneur de la figure */
+        .figure-container {
+            position: relative;
+            display: inline-block;
+            width: 50%; /* Ajustez la largeur si nécessaire */
+            margin: 20px 0;
+        }
+
+        /* Effet de superposition pour la légende */
+        .figure-caption {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px;
+            font-size: 14px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .figure-container:hover .figure-caption {
+            opacity: 1;
+        }
+    </style>
+
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -105,8 +148,13 @@
 
                 <p>A significant portion of AMR products are still in the early stages of development. The majority of products are concentrated in Phase I (310), Phase II (186), and Phase III (146), with only 27 products in preregistration as shown in Figure 1. This trend reflects a strong commitment to developing AMR solutions, but it also emphasizes the challenges of advancing products through the later stages due to regulatory, technical, and efficacy hurdles.</p>
 
-                <img src="https://github.com/user-attachments/assets/b1941716-5e24-498d-8d1b-adf75cf89950" alt="Overview of AMR Products" class="img-responsive">
-                <p><strong>Figure 1:</strong> Overview of the AMR Products in the Clinical Trials Pipeline.</p>
+                <img src="https://github.com/user-attachments/assets/b1941716-5e24-498d-8d1b-adf75cf89950" 
+                     alt="Overview of AMR Products" 
+                     class="img-responsive" 
+                     title="Figure 1: Overview of the AMR Products in the Clinical Trials Pipeline.">
+                <div class="figure-caption">
+                    Figure 1: Overview of the AMR Products in the Clinical Trials Pipeline.
+                </div>
 
                 <p>Regarding product types, traditional antibiotics dominate the pipeline, with 383 products (57%), while 286 non-traditional therapies (43%) reflect an increasing interest in alternative approaches like bacteriophages, immune modulators, and microbiome-based interventions (Figure 2). The balance between these approaches is expected to evolve as more innovative therapies advance.</p>
 
