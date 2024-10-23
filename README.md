@@ -22,3 +22,8 @@ HTML, CSS, JavaScript, R, Python.
 *Free website template:*
 
 https://github.com/learning-zone/website-templates/tree/master/startbootstrap-clean-blog-1.0.2
+
+*Images:*
+
+https://pixabay.com/fr/
+
