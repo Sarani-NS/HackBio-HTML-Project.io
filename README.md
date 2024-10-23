@@ -5,7 +5,9 @@
 <p>Turning my online-internship experience into a dynamic HTML pages-association. 
 Screenshot of the main page.</p>
 
-<h2 align="left">Website - user guide</h2>
+<h2 align="left">Website</h2>
+
+<h3 align="left">User guide</h3>
 
 <img src="https://raw.githubusercontent.com/Sarani-NS/HackBio-HTML-Project.io/c85e8be93a289be55422eb600ead6584610fedf7/img/overview.png" alt="overview"/>
 
