@@ -14,9 +14,6 @@
 
 <img src="https://raw.githubusercontent.com/Sarani-NS/HackBio-HTML-Project.io/refs/heads/main/img/functionalities.png" alt="functionalities"/>
 
-<h3 align="left">Wait... is that ANOTHER form?</h3>
-
-<p>Coming soon.</p>
 ---
 
 <h2 align="left">Languages and Tools</h2>
@@ -52,3 +49,7 @@
 <a href ="https://openclassrooms.com/en/courses/5265446-build-your-first-web-pages-with-html-and-css">Build Your First Web Pages With HTML and CSS</a>
 
 <img src="https://github.com/user-attachments/assets/6702430a-dbeb-4d22-a139-3cf3c5fc59de" alt="Proof of completion" />
+
+<a href ="https://openclassrooms.com/en/courses/5493201-write-javascript-for-the-web">Write JavaScript for the Web</a>
+
+<img src="https://github.com/user-attachments/assets/c5d498b0-936a-4c92-9b86-9672b97b15ec" alt="Proof of completion" />
