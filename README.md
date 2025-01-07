@@ -53,3 +53,8 @@
 <a href ="https://openclassrooms.com/en/courses/5493201-write-javascript-for-the-web">Write JavaScript for the Web</a>
 
 <img src="https://github.com/user-attachments/assets/c5d498b0-936a-4c92-9b86-9672b97b15ec" alt="Proof of completion" />
+
+<a href ="https://openclassrooms.com/en/courses/7655936-create-responsive-websites-efficiently-with-bootstrap-5">Create responsive websites efficiently with bootstrap-5</a>
+
+<img src="https://github.com/user-attachments/assets/ee760a91-b44c-4c4e-927f-b9a6b64b4854" alt="Proof of completion" />
+
