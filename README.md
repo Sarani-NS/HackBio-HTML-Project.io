@@ -32,6 +32,7 @@
   <img src="https://github.com/yurijserrano/Github-Profile-Readme-Logos/blob/master/programming%20languages/bash.svg" alt="Bash" width="40" height="40"/>
 
 </p>
+
 ---
 
 <h2 align="left">Credits</h2>
